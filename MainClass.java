@@ -8,7 +8,7 @@ public class MainClass {
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
-		Scanner scan = new Scanner(System.in);
+		/*Scanner scan = new Scanner(System.in);
 		do
 		{
 			//Playing
@@ -16,7 +16,19 @@ public class MainClass {
 			System.out.println("Play again ? (1/else)");
 			
 		}while(scan.nextInt() == 1);
-		scan.close();
+		scan.close();*/
+		
+		Client
+			moi = new Client("Tom", "Vautray"),
+			billy = new Client("Bill", "Gates");
+		
+		for(int i = 0; i < 50; i++)
+			billy.openAccount(i, 10000000);
+		
+		moi.openAccount(1, 3);
+		
+		System.out.println("moi: " + moi + "\n\rBilly: " + billy);
+		
 	}
 
 	public static void playDiviner(Scanner scan)
